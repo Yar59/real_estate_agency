@@ -10,3 +10,4 @@ class FlatAdmin(admin.ModelAdmin):
     list_display = ('address', 'town', 'price', 'construction_year', 'new_building')
     list_display_links = ('address',)
     list_editable = ('new_building',)
+    list_filter = ('new_building', 'rooms_number', 'has_balcony')
