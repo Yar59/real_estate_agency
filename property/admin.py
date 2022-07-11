@@ -11,8 +11,9 @@ class FlatAdmin(admin.ModelAdmin):
     list_display_links = ('address',)
     list_editable = ('new_building',)
     list_filter = ('new_building', 'rooms_number', 'has_balcony')
+    raw_id_fields = ('liked_by',)
 
 
 @admin.register(Complaint)
-class FlatAdmin(admin.ModelAdmin):
+class ComplaintAdmin(admin.ModelAdmin):
     raw_id_fields = ('user', 'flat')
