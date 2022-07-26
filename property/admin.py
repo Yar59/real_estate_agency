@@ -30,3 +30,5 @@ class ComplaintAdmin(admin.ModelAdmin):
 @admin.register(Owner)
 class ComplaintAdmin(admin.ModelAdmin):
     raw_id_fields = ('flats',)
+    list_display = ('name', 'pure_number',)
+    list_display_links = ('name',)
